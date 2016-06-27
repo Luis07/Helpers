@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "Helper";
+}
+<p>This is a welcome Message</p>
+@Helpers.WelcomeNote()
+<p>This is some opening paragraph text.</p>
+
+<!-- Insert the call to your note helper here. -->
+@Helpers.MakeNote("My test note content.")
+<p>Name</p>
+@Helpers.UserName()
+<p>Helper para un boton</p>
+@Helpers.Boton()
+@Helpers.Color()

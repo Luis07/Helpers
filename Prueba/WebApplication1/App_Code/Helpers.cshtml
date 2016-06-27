@@ -1,0 +1,43 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+
+namespace WebApplication1.App_Code
+{
+@helper MakeNote(string content) {
+<div class="note"
+     style="border: 1px solid black; width: 90%; padding: 5px; margin-left: 15px;">
+    <p>
+        <strong>Note</strong>&nbsp;&nbsp; @content
+    </p>
+</div>
+}
+@helper WelcomeNote() {
+<div class="note"
+     style="border: 1px solid black; width: 90%; padding: 5px; margin-left: 15px;">
+    <p>
+        <strong>Bienvenido a mi Helper de Bienvenida</strong>&nbsp;&nbsp; 
+    </p>
+</div>
+}
+ @helper UserName() {
+<div class="note"
+     style="border: 1px solid black; width: 90%; padding: 5px; margin-left: 15px;">
+    <input type="text" placeholder="Name">
+    
+</div>
+}
+@helper Boton() {
+<div class="note"
+     style="border: 1px solid blue; width: 90%; padding: 5px; margin-left: 15px;">
+    <button>Accept</button>
+</div>
+}
+@helper Color() {
+<div class="note"
+          style="border: 1px solid red; width: 100%; padding: 5px; margin-left: 15px;">
+        <p>Adios</p>
+</div>
+}
+}
